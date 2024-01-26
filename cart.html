@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Aytor">
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywrods" content="">
+        <title>Cart - Aytor</title>
+        <!-- favicon link starting -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/favicon/android-icon-192x192.png">
+        <link rel="manifest" href="./assets/images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- google fonts link starting -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+        <!-- slik sliled css link starting -->
+        <link rel="stylesheet" href="./assets/vendors/css/slick.css">
+        <!-- venobox css link starting -->
+        <link rel="stylesheet" href="./assets/vendors/css/venobox.min.css">
+        <!-- fontawesome css link starting -->
+        <link rel="stylesheet" href="./assets/vendors/css/fontawesome.min.css">
+        <!-- bootstrap css link starting -->
+        <link rel="stylesheet" href="./assets/vendors/css/bootstrap.min.css">
+        <!-- main css link starting -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/Responsive.css">
+</head>
+<body>
+     <!-- header section starting -->
+    <!-- Topbar section starting -->
+    <header id="topbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="topbar_left_content col-lg-5">
+                    <p>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        FREE SHIPPING world wide for all orders over <span>$150</span></p>
+                </div>
+                <div class="topbar_right_content col-lg-7 d-flex justify-content-end align-items-center">
+                    <ul class="content d-flex">
+                        <li>Track Your Order</li>
+                        <li>
+                            <select name="" id="">
+                                <option value="">Language</option>
+                                <option value="">English</option>
+                                <option value="">Bangla</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="" id="">
+                                <option value="">Curency</option>
+                                <option value="">USD</option>
+                                <option value="">BDT</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="social_icon d-flex">
+                        <li><a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="http://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Topbar section ending -->
+    
+
+    <!-- navbar section starting -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/images/Aytor_Logo.svg" alt="" class="img-fluid " ></a>
+
+            <div class="menubar collapse navbar-collapse">
+                <ul class="navbar-nav menu mx-auto">
+                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./blog.html">Blogs</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav menu_icon align-items-center">
+                    <li><button class="search_box_show_btn"><i class="fa-solid fa-search"></i></button></li>
+                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="./wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><button class="card_box_show_btn"><i class="fa-solid fa-bag-shopping"></i><span>4</span></button></li>
+                </ul>
+            </div>
+            <button type="button" id="dropdown" class="as-menu-toggle d-inline-block d-lg-none"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+        <!-- navbar section ending -->
+        <!-- header section ending -->
+
+        <main>
+            <section id="cart_page_heading" class="d-flex flex-wrap justify-content-center align-items-center">
+                <div>
+                 <h3>Cart</h3>
+                 <h6 class="text-center">Home  /  Cart</h6>
+                </div>
+              </section>
+              <!-- page_heading section end -->
+              <section id="cart_product_details" class="d-none d-md-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                <table border="1">
+                                    <tr style="height: 60px;border-bottom: 2px solid red;">
+                                        <td class="table_head" style="width: 240px;border:1px solid #e9e7e7; text-align: center;">Image</td>
+                                        <td class="table_head" style="width: 365px;border:1px solid #e9e7e7; text-align: center;">Product Name</td>
+                                        <td class="table_head" style="width: 172px;border:1px solid #e9e7e7; text-align: center;">Price/Unit</td>
+                                        <td class="table_head" style="width: 260px;border:1px solid #e9e7e7; text-align: center;">Quantity</td>
+                                        <td class="table_head" style="width: 139px;border:1px solid #e9e7e7; text-align: center;">Total</td>
+                                        <td class="table_head" style="width: 144px;border:1px solid #e9e7e7; text-align: center;">Remove</td>
+                                    </tr>
+                                    <tr style="height: 200px;">
+                                        <td style="width: 240px;border:1px solid #e9e7e7; text-align: center;"><a href="shop.html"><img src="./Assets/images/cart/cart-img-1-1.jpg" alt="" class="img-fluid"></a></td>
+                                        <td style="width: 365px;border:1px solid #e9e7e7; text-align: center;" class="product_name">Jacket Hoodie Sweater</td>
+                                        <td style="width: 172px;border:1px solid #e9e7e7; text-align: center;">$18	</td>
+                                        <td style="width: 260px;border:1px solid #e9e7e7; text-align: center;">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <button  class="decrement" type="button"><i class="fa-solid fa-minus"></i></button>
+                                                <input type="text"  class="result text-center" value="1">
+                                                <button class="increment" type="button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td style="width: 139px;border:1px solid #e9e7e7; text-align: center;">$18	</td>
+                                        <td style="width: 144px;border:1px solid #e9e7e7; text-align: center;"><a href="#"><i class="remove fa-solid fa-trash-can"></i></a></td>
+                                    </tr>
+                                    <tr style="height: 200px;">
+                                        <td style="width: 240px;border:1px solid #e9e7e7; text-align: center;"><a href="shop.html"><img src="./Assets/images/cart/cart-img-1-2.jpg" alt="" class="img-fluid"></a></td>
+                                        <td style="width: 365px;border:1px solid #e9e7e7; text-align: center;" class="product_name">Sports Shoes</td>
+                                        <td style="width: 172px;border:1px solid #e9e7e7; text-align: center;">$23</td>
+                                        <td style="width: 260px;border:1px solid #e9e7e7; text-align: center;">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <button  class="decrement" type="button"><i class="fa-solid fa-minus"></i></button>
+                                                <input type="text"  class="result text-center" value="1">
+                                                <button class="increment" type="button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td style="width: 139px;border:1px solid #e9e7e7; text-align: center;">$52</td>
+                                        <td style="width: 144px;border:1px solid #e9e7e7; text-align: center;"><a href="#"><i class="remove fa-solid fa-trash-can"></i></a></td>
+                                    </tr>
+                                    <tr style="height: 200px;">
+                                        <td style="width: 240px;border:1px solid #e9e7e7; text-align: center;"><a href="shop.html"><img src="./Assets/images/cart/cart-img-1-3.jpg" alt="" class="img-fluid"></a></td>
+                                        <td style="width: 365px;border:1px solid #e9e7e7; text-align: center;" class="product_name">Smart Watch</td>
+                                        <td style="width: 172px;border:1px solid #e9e7e7; text-align: center;">$25</td>
+                                        <td style="width: 260px;border:1px solid #e9e7e7; text-align: center;">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <button  class="decrement" type="button"><i class="fa-solid fa-minus"></i></button>
+                                                <input type="text"  class="result text-center" value="1">
+                                                <button class="increment" type="button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td style="width: 139px;border:1px solid #e9e7e7; text-align: center;">$18	</td>
+                                        <td style="width: 144px;border:1px solid #e9e7e7; text-align: center;"><a href="#"><i class="remove fa-solid fa-trash-can"></i></a></td>
+                                    </tr>
+                                    <tr style="height: 200px;">
+                                        <td style="width: 240px;border:1px solid #e9e7e7; text-align: center;"><a href="shop.html"><img src="./Assets/images/cart/cart-img-1-4.jpg" alt="" class="img-fluid"></a></td>
+                                        <td style="width: 365px;border:1px solid #e9e7e7; text-align: center;" class="product_name">Bluetooth Speaker</td>
+                                        <td style="width: 172px;border:1px solid #e9e7e7; text-align: center;">$25</td>
+                                        <td style="width: 260px;border:1px solid #e9e7e7; text-align: center;">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <button  class="decrement" type="button"><i class="fa-solid fa-minus"></i></button>
+                                                <input type="text"  class="result text-center" value="1">
+                                                <button class="increment" type="button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td style="width: 139px;border:1px solid #e9e7e7; text-align: center;">$18</td>
+                                        <td style="width: 144px;border:1px solid #e9e7e7; text-align: center;"><a href="#"><i class="remove fa-solid fa-trash-can"></i></a></td>
+                                    </tr>
+                                   </table>
+                            </div>
+                        </div>
+                    </div>
+              </section>
+              <section id="small_device_cart_product_details" class="mt-5 d-md-none">
+                <div class="container">
+                    <div style="height: 180px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Product</h5></div>
+                        <div class="pe-3">
+                            <img src="./assets/images/cart/cart-img-1-1.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Name</h5></div>
+                        <div class="pe-3"> <h5>Jacket Hoodie</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Price</h5></div>
+                        <div class="pe-3"> <h5>$18</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Quantity</h5></div>
+                            <div class="pe-3 d-flex align-items-center justify-content-center">
+                                <button  class="decrement" type="button"><i class="fa-solid fa-minus"></i></button>
+                                <input type="text"  class="result text-center" value="1">
+                                <button class="increment" type="button"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Total</h5></div>
+                        <div class="pe-3"> <h5>$18</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Remove</h5></div>
+                        <div class="pe-3"><a href="#"><i class="remove fa-solid fa-trash-can"></i></a></div>
+                    </div>
+                </div>
+              </section>
+              <section id="small_device_cart_product_details" class="mt-5 d-md-none">
+                <div class="container">
+                    <div style="height: 180px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Product</h5></div>
+                        <div class="pe-3">
+                            <img src="./assets/images/cart/cart-img-1-2.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Name</h5></div>
+                        <div class="pe-3"> <h5>Sports Shoes</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Price</h5></div>
+                        <div class="pe-3"> <h5>$20</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Quantity</h5></div>
+                            <div class="pe-3 d-flex align-items-center justify-content-center">
+                                <button  class="decrement" type="button"><i class="fa-solid fa-minus"></i></button>
+                                <input type="text"  class="result text-center" value="1">
+                                <button class="increment" type="button"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Total</h5></div>
+                        <div class="pe-3"> <h5>$30</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Remove</h5></div>
+                        <div class="pe-3"><a href="#"><i class="remove fa-solid fa-trash-can"></i></a></div>
+                    </div>
+                </div>
+              </section>
+              <section id="small_device_cart_product_details" class="mt-5 d-md-none">
+                <div class="container">
+                    <div style="height: 180px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Product</h5></div>
+                        <div class="pe-3">
+                            <img src="./assets/images/cart/cart-img-1-3.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Name</h5></div>
+                        <div class="pe-3"> <h5>Smart Watch</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Price</h5></div>
+                        <div class="pe-3"> <h5>$18</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Quantity</h5></div>
+                            <div class="pe-3 d-flex align-items-center justify-content-center">
+                                <button  class="decrement" type="button"><i class="fa-solid fa-minus"></i></button>
+                                <input type="text"  class="result text-center" value="1">
+                                <button class="increment" type="button"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Total</h5></div>
+                        <div class="pe-3"> <h5>$40</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Remove</h5></div>
+                        <div class="pe-3"><a href="#"><i class="remove fa-solid fa-trash-can"></i></a></div>
+                    </div>
+                </div>
+              </section>
+              <section id="small_device_cart_product_details" class="mt-5 d-md-none">
+                <div class="container">
+                    <div style="height: 180px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Product</h5></div>
+                        <div class="pe-3">
+                            <img src="./assets/images/cart/cart-img-1-4.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Name</h5></div>
+                        <div class="pe-3"> <h5>Bluetooth Speaker</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Price</h5></div>
+                        <div class="pe-3"> <h5>$32</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Quantity</h5></div>
+                            <div class="pe-3 d-flex align-items-center justify-content-center">
+                                <button  class="decrement" type="button"><i class="fa-solid fa-minus"></i></button>
+                                <input type="text"  class="result text-center" value="1">
+                                <button class="increment" type="button"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Total</h5></div>
+                        <div class="pe-3"> <h5>$48</h5></div>
+                    </div>
+                    <div style="height: 50px;border: 1px solid #cdc9c9;" class="d-flex justify-content-between align-items-center">
+                        <div> <h5 class="ps-3">Remove</h5></div>
+                        <div class="pe-3"><a href="#"><i class="remove fa-solid fa-trash-can"></i></a></div>
+                    </div>
+                </div>
+              </section>
+              <!-- cart total section start -->
+              <section id="cart_total">
+               <div class="container">
+               <div class="row">
+                <div class="col-lg-6 ms-auto">
+                    <h4>Cart Total:</h4>
+                    <table border="1" style="border-color: #e9e7e7;">
+                        <tr style="height: 60px;">
+                            <td style="width: 224px; border: 1px solid #c0bdbd;background-color: #e9e7e7;" class="ps-3">Subtotal</td>
+                            <td style="width: 424px; border: 1px solid #c0bdbd;" class="ps-3">$130</td>
+                        </tr>
+                        <tr style="height: 60px;">
+                            <td style="width: 224px; border: 1px solid #c0bdbd;background-color: #e9e7e7;" class="ps-3">Total</td>
+                            <td style="width: 424px; border: 1px solid #c0bdbd; color: red;" class="ps-3">$130</td>
+                        </tr>
+                    </table>
+                    <a href="#">Proceed To Checkout <i class="fa-solid fa-long-arrow-right"></i></a>
+                </div>
+               </div>
+               </div>
+              </section>
+        </main>
+
+        <!-- footer section starting -->
+        <footer>
+            <div class="container">
+                <div class="click_icon__logo">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="social_icon col-lg-4" >
+                            <ul class="icon d-flex">
+                                <li><a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="http://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                <li><a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_logo col-lg-4">
+                            <a href="index.html"><img src="./assets/images/Logo.svg" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="card_img col-lg-4">
+                            <img src="./assets/images/25654-2-major-credit-card-logo-transparent-thumb 1.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_input">
+                    <div class="row">
+                       <div class="account_input col-lg-2">
+                            <h3>My Account</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>My Account</a></li>
+                                <li><a href="cart.html"><i class="fa-solid fa-chevron-right"></i>View Cart</a></li>
+                                <li><a href="wishlist.html"><i class="fa-solid fa-chevron-right"></i>Wishlist</a></li>
+                                <li><a href="compare.html"><i class="fa-solid fa-chevron-right"></i>Compare</a></li>
+                                <li><a href="shop.html"><i class="fa-solid fa-chevron-right"></i>New Products</a></li> 
+                            </ul>
+                       </div>
+                       <div class="support_input col-lg-2">
+                            <h3>Support</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Help</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Feedback</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Customer Service</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Store Locations</a></li> 
+                            </ul>
+                       </div>
+                       <div class="opening_time col-lg-2">
+                            <h3>Opening Time</h3>
+                            <ul>
+                                <li class="row align-items-center"><span class="col-6">Mon - Tue:</span><p class="col-6">8AM - 10PM</p></li>
+                                <li class="row align-items-center"><span class="col-6">Wed:</span><p class="col-6">8AM - 7PM</p></li>
+                                <li class="row align-items-center"><span class="col-6">Fri:</span><p class="col-6">7AM - 12PM</p></li>
+                                <li class="row align-items-center"><span class="col-6">Sat:</span><p class="col-6">9AM - 8PM</p></li>
+                                <li class="row align-items-center"><span class="col-6">Sun:</span><p class="col-6">Closed</p></li> 
+                            </ul>
+                       </div>
+                       <div class="contect_input col-lg-3">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <div class="contect_icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="contect_input"><a href="">830 Broadway, New York, NY 10003,
+                                        United States</a></div>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <div class="contect_icon"><i class="fa-solid fa-phone"></i>       </div>
+                                    <div class="contect_input"><a href="callto:+18008660286">+18008660286</a></div>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <div class="contect_icon"><i class="fa-solid fa-envelope"></i>    </div>
+                                    <div class="contect_input">
+                                        <p><a href="mailto:aetor.info@gmail.com">aetor.info@gmail.com</a></p>
+                                        <p><a href="www.info@aetor.com">info@aetor.com</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                       </div>
+                       <div class="News_Letter col-lg-3">
+                            <h3>News Letter</h3>
+                            <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+                            <form action="">
+                                <input type="text" placeholder="Enter your email....">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_bar">
+                <p>&copy 2022 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft.</span></p>
+            </div>
+        </footer>
+    <!-- footer section ending -->
+    <!-- extra section starting -->
+            <!-- email login from starting -->
+        <section id="email_logn_from">
+            <div class="row align-items-center justify-content-center w-100 h-100">
+                <div class="from_container col-lg-8">
+                    <button class="cloes_btn"><i class="fa-solid fa-xmark"></i></button>
+                    <h4>Newsletter</h4>
+                    <p>Seamlessly disseminate interoperable collaboration and idea-sharing via magnetic catalysts for change. Interactively enable competitive customer service.</p>
+                    <form action="" class="row align-items-center justify-content-center" >
+                        <input type="email" id="email" placeholder="Enter Keyword...">
+                        <button class="submit_btn col-lg-2" type="submit">Subscribe</button>
+                    </form>
+                    <div class="check_box d-flex justify-content-center align-items-center">
+                        <input type="checkbox" id="click">
+                        <label for="click">Don’t Show This Popup Again</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- email login from ending -->
+        <!-- search section starting -->
+        <section id="search_container" class="d-flex align-items-center justify-content-center">
+            <button class="search_box_cloes_btn d-flex align-items-center justify-content-center"><i class="fa-solid fa-xmark"></i></button>
+            <form action="" class="d-flex search_form">
+                <input type="search" placeholder="What are you looking for">
+                <button type="submit" class="search_submit_btn"><i class="fa-solid fa-search"></i></button>
+            </form>
+        </section>
+        <!-- search section ending -->
+        
+        <!-- Shopping cart section starting -->
+        <section id="Shopping_cart">
+            <div class="white_space"></div>
+            <div class="Shopping_cart_box">
+                <button class="Shopping_cart_close_btn d-flex align-items-center justify-content-center ms-auto">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h3 class="title">Shopping cart</h3>
+                <div class="shopping_item d-flex align-items-center">
+                    <div class="item_img">
+                        <img src="./assets/images/shopping_crad/cart-img-1-1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="item_input">
+                        <h5>Jacket Hoodie</h5>
+                        <p>1 × $40.00</p>
+                    </div>
+                    <div class="delete_icon ms-auto">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="shopping_item d-flex align-items-center">
+                    <div class="item_img">
+                        <img src="./assets/images/shopping_crad/cart-img-1-2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="item_input">
+                        <h5>Sports Shoes</h5>
+                        <p>1 × $99.00</p>
+                    </div>
+                    <div class="delete_icon ms-auto">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="shopping_item d-flex align-items-center">
+                    <div class="item_img">
+                        <img src="./assets/images/shopping_crad/cart-img-1-3.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="item_input">
+                        <h5>Smart Watch</h5>
+                        <p>1 × $56.00</p>
+                    </div>
+                    <div class="delete_icon ms-auto">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="shopping_item d-flex align-items-center">
+                    <div class="item_img">
+                        <img src="./assets/images/shopping_crad/cart-img-1-4.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="item_input">
+                        <h5>Bluetooth Speaker</h5>
+                        <p>1 × $23.00</p>
+                    </div>
+                    <div class="delete_icon ms-auto">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="totel_price">
+                    <p>Subtotal: <span>$318.00</span></p>
+                </div>
+                <div class="crad_main_btn d-flex align-items-center justify-content-between">
+                    <a href="#">View cart</a>
+                    <a href="#">Checkout</a>
+                </div>
+            </div>
+        </section>
+        <!-- Shopping cart section ending -->
+
+
+            <!-- extra section ending -->
+        <!-- jquery link starting -->
+        <script src="./assets/vendors/js/jquery-3.7.1.min.js"></script>
+        <!-- bootstrap js link starting -->
+        <script src="./assets/vendors/js/bootstrap.bundle.min.js"></script>
+        <!-- venobox js link starting -->
+        <script src="./assets/vendors/js/venobox.min.js"></script>
+        <!-- offer final countdown js link starting  -->
+        <script src="./assets/vendors/js/jquery.countdown.min.js"></script>
+        <!-- slik slide js link starting -->
+        <script src="./assets/vendors/js/slick.min.js"></script>
+        <!-- main js link starting -->
+        <script src="./assets/js/app.js"></script>
+</body>
+</html>
